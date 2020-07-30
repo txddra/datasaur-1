@@ -57,6 +57,10 @@ return dino.map(makeSingular)
 
 }
 
+const truncateDinos = function(dino){
+  return dino.map(truncateSpecies)
+}
+
 
 /*********************************
  * TEST SETUP CODE - DON'T TOUCH!*
