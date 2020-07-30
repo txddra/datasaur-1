@@ -60,6 +60,9 @@ return thisDinoObj
 const isCarnivore = function(dino){
 return dino.carnivore
 }
+const isExtinct = function(dino){
+return dino.extinct
+}
 /***********************
  * ITERATION FUNCTIONS *
  **********************/
