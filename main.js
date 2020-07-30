@@ -9,6 +9,8 @@ carnivore : newDiet,
 extinct: newExtinct,
 }
 }
+
+
 //given an object
 const makeSingular = function(obj){
   //returns new object
@@ -27,13 +29,17 @@ const makeSingular = function(obj){
   return thisDinoObj;
   }
 
+// 
+
+
 
 
 /***********************
  * ITERATION FUNCTIONS *
  **********************/
+//returns an array
 const singularizeDinos = function(dino){
-const newDinos = dinos.map(makeSingular)
+return dino.map(makeSingular)
 
 }
 
