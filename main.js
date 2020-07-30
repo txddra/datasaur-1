@@ -9,12 +9,33 @@ carnivore : newDiet,
 extinct: newExtinct,
 }
 }
+//given an object
+const makeSingular = function(obj){
+  //returns new object
+  const thisDinoObj = {
+    species: obj.species,
+    period: obj.period,
+    carnivore: obj.carnivore,
+    extinct: obj.extinct,
+  };
+  //if the species ends with 'us' take off those last two letters
+  if(thisDinoObj.species.endsWith('us')){
+    thisDinoObj.species = thisDinoObj.species.slice(0,thisDinoObj.species.length-2)
+  }
+  
+  //   //otherwise return it as is
+  return thisDinoObj;
+  }
+
 
 
 /***********************
  * ITERATION FUNCTIONS *
  **********************/
+const singularizeDinos = function(dino){
+const newDinos = dinos.map(makeSingular)
 
+}
 
 
 /*********************************
