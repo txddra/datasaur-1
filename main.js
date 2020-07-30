@@ -1,7 +1,14 @@
 /********************
  * HELPER FUNCTIONS *
  ********************/
-
+const makeDino= function(newSpecies, newPeriod, newDiet, newExtinct = false){
+  return{
+species: newSpecies,
+period : newPeriod,
+carnivore : newDiet,
+extinct: newExtinct,
+}
+}
 
 
 /***********************
