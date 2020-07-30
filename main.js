@@ -47,6 +47,16 @@ const truncateSpecies = function(dino){
   return thisDinoObj
 }
 
+const makeExtinct = function(dino){
+const thisDinoObj={
+  species: dino.species,
+    period: dino.period,
+    carnivore: dino.carnivore,
+    extinct: dino.extinct=true,
+}
+return thisDinoObj
+}
+
 
 /***********************
  * ITERATION FUNCTIONS *
