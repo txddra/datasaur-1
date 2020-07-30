@@ -57,7 +57,9 @@ const thisDinoObj={
 return thisDinoObj
 }
 
-
+const isCarnivore = function(dino){
+return dino.carnivore
+}
 /***********************
  * ITERATION FUNCTIONS *
  **********************/
@@ -69,6 +71,10 @@ return dino.map(makeSingular)
 
 const truncateDinos = function(dino){
   return dino.map(truncateSpecies)
+} 
+
+const makeAllExtinct = function(dino){
+return dino.map(makeExtinct)
 }
 
 
