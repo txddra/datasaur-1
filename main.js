@@ -30,8 +30,22 @@ const makeSingular = function(obj){
   }
 
 // 
-
-
+const truncateSpecies = function(dino){
+  
+  const thisDinoObj = {
+    species: dino.species,
+    period: dino.period,
+    carnivore: dino.carnivore,
+    extinct: dino.extinct,
+  }//if the length of the name is  10 or more characters long
+  if (thisDinoObj.species.length > 10 ){
+    //stop the string at the 7th character, adding "..." at the end
+    thisDinoObj.species = thisDinoObj.species.slice(0,7)  + "..."
+    
+    }
+    // otherwise return the object unchanged.
+  return thisDinoObj
+}
 
 
 /***********************
