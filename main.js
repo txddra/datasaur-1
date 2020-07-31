@@ -52,17 +52,27 @@ const thisDinoObj={
   species: dino.species,
     period: dino.period,
     carnivore: dino.carnivore,
-    extinct: dino.extinct=true,
+    extinct: true
 }
-return thisDinoObj
+// thisDinoObj.extinct = true
+return thisDinoObj;
 }
 
 const isCarnivore = function(dino){
 return dino.carnivore
 }
+
 const isExtinct = function(dino){
 return dino.extinct
 }
+
+const isTriassic = function(dino){
+if(dino.period === 'Triassic'){
+  return true
+}
+return false
+}
+
 /***********************
  * ITERATION FUNCTIONS *
  **********************/
@@ -79,7 +89,6 @@ const truncateDinos = function(dino){
 const makeAllExtinct = function(dino){
 return dino.map(makeExtinct)
 }
-
 
 /*********************************
  * TEST SETUP CODE - DON'T TOUCH!*
