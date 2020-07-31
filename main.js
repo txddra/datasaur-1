@@ -59,18 +59,25 @@ return thisDinoObj;
 }
 
 const isCarnivore = function(dino){
-return dino.carnivore
+return dino.carnivore; 
 }
 
 const isExtinct = function(dino){
-return dino.extinct
+return dino.extinct;
 }
 
 const isTriassic = function(dino){
 if(dino.period === 'Triassic'){
-  return true
+  return true;
 }
-return false
+return false;
+}
+
+const isJurassic = function(dinosaur){
+if(dinosaur.period === 'Jurassic'){
+return true;
+}
+return false;
 }
 
 /***********************
