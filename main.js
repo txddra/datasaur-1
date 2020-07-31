@@ -80,6 +80,13 @@ return true;
 return false;
 }
 
+const isCretaceous = function(givenDinosaur){
+  if(givenDinosaur.period === 'Cretaceous'){
+return true;
+  }
+  return false;
+}
+
 /***********************
  * ITERATION FUNCTIONS *
  **********************/
