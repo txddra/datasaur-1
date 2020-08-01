@@ -91,6 +91,7 @@ return true;
  * ITERATION FUNCTIONS *
  **********************/
 //returns an array
+//map functions:
 const singularizeDinos = function(dino){
 return dino.map(makeSingular)
 
@@ -103,6 +104,21 @@ const truncateDinos = function(dino){
 const makeAllExtinct = function(dino){
 return dino.map(makeExtinct)
 }
+
+// filter functions
+const carnivoresOnly = function(dino){
+return dino.filter(isCarnivore)
+}
+
+const herbivoresOnly = function(dino){
+  //gets error: "false is not a function"
+// return dino.filter(!isCarnivore)
+return dino.filter(function (dino){
+  return !isCarnivore(dino)
+})
+
+}
+
 
 /*********************************
  * TEST SETUP CODE - DON'T TOUCH!*
