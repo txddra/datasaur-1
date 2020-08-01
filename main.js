@@ -133,9 +133,19 @@ const notExtinct = function (array) {
   })
 }
 
+
 const triassicOnly = function(array){
 return array.filter(isTriassic)
 }
+
+
+const notTriassic = function(array){
+  // const a = array.filter(isTriassic);
+  return array.filter( array => !isTriassic(array))
+}
+
+// const a = someArr.filter(someFilter);
+// const a = someArr.filter(e => !someFilter(e));
 /*********************************
  * TEST SETUP CODE - DON'T TOUCH!*
  ********************************/
