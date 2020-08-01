@@ -110,15 +110,19 @@ const carnivoresOnly = function(dino){
 return dino.filter(isCarnivore)
 }
 
-const herbivoresOnly = function(dino){
+const herbivoresOnly = function(array){
   //gets error: "false is not a function"
-// return dino.filter(!isCarnivore)
-return dino.filter(function (dino){
-  return !isCarnivore(dino)
+// return array.filter(!isCarnivore)
+return array.filter(function (array){
+  return !isCarnivore(array)
 })
 
 }
 
+
+const extinctOnly = function(array){
+return array.filter(isExtinct)
+}
 
 /*********************************
  * TEST SETUP CODE - DON'T TOUCH!*
