@@ -110,6 +110,7 @@ const carnivoresOnly = function (dino) {
   return dino.filter(isCarnivore)
 }
 
+
 const herbivoresOnly = function (array) {
   //gets error: "false is not a function"
   // return array.filter(!isCarnivore)
@@ -124,10 +125,16 @@ const extinctOnly = function (array) {
   return array.filter(isExtinct)
 }
 
+
+
 const notExtinct = function (array) {
   return array.filter(function (array) {
     return !isExtinct(array)
   })
+}
+
+const triassicOnly = function(array){
+return array.filter(isTriassic)
 }
 /*********************************
  * TEST SETUP CODE - DON'T TOUCH!*
